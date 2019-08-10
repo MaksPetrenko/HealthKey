@@ -1,6 +1,7 @@
+import java.io.PrintWriter;
 import java.util.Scanner;
 public class HealthKey {
-    public static void main (String []args){
+    public static void main (String []args) throws Exception {
 
         System.out.println("You are welcomed by the program HealthKey!");
 
@@ -20,7 +21,12 @@ public class HealthKey {
 
         double result = (e / d);
         System.out.println("Your body mass index = " + result);
+        System.out.print("Please enter a file name to display the information : ");
+        s.nextLine();
+        String f= s.nextLine();
 
-        
+        PrintWriter printWriter = new PrintWriter(f+".txt");
+        printWriter.println(result);
+        printWriter.close();
     }
 }
