@@ -9,13 +9,15 @@ public class HealthKey {
         String a = s.nextLine();
         System.out.print("Your age : ");
         int b = s.nextInt();
-        System.out.print("Your gender : ");
+        System.out.print("Your gender male? : ");
         boolean c = s.nextBoolean();
         System.out.print("Your height : ");
         float d = s.nextFloat();
         System.out.print("Your weight : ");
         double e = s.nextDouble();
 
-        
+        System.out.println("Welcome on your journey to a healthy future " + a);
+
+
     }
 }
