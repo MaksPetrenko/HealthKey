@@ -18,6 +18,9 @@ public class HealthKey {
 
         System.out.println("Welcome on your journey to a healthy future " + a);
 
+        double result = (e / d);
+        System.out.println("Your body mass index = " + result);
 
+        
     }
 }
